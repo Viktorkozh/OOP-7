@@ -3,14 +3,20 @@
 
 from tkinter import Tk, Radiobutton, Label, Frame, StringVar
 
+
 def update_label() -> None:
     label["text"] = f"{var.get()}"
+
 
 root = Tk()
 root.geometry("200x120")
 
 var = StringVar()
-contactList = [("Вася", "+3 645456456"), ("Петя", "+6 5141414"), ("Маша", "+5 645456123")]
+contactList = [
+    ("Вася", "+3 645456456"),
+    ("Петя", "+6 5141414"),
+    ("Маша", "+5 645456123"),
+]
 
 frame = Frame(root)
 for name, phoneNumber in contactList:

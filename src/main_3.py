@@ -14,6 +14,7 @@ def insert_color_code(color_code: str, color_name: str) -> None:
 def create_color_button(color_code: str, color_name: str) -> Callable[[], None]:
     def button_command() -> None:
         insert_color_code(color_code, color_name)
+
     return button_command
 
 
